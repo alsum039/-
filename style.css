@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --font-family: "HelveticaNeue", sans-serif;
+}
+
+@font-face {
+  font-family: "HNB";
+  src: url(/fonts/HelveticaNeue-Bold.otf);
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url(/fonts/HelveticaNeue-Roman.otf);
+}
+
+@font-face {
+  font-family: "HRL";
+  src: url(/fonts/HelveticaNeue-Light.otf);
+}
+.container {
+  max-width: 1110px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Segoe UI", Segoe, Tahoma, Arial, sans-serif;
+  background-color: #373a3c;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.nav-links a {
+  color: #ddd;
+  text-decoration: none;
+  margin-left: 32px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #9eff00;
+}
+
+.nav {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.search-box {
+  background: #fff;
+  border-radius: 2px;
+  padding: 5px 10px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  width: 209px;
+  height: 38px;
+}
+
+.search-box button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+}
+
+.my-xbox {
+  cursor: pointer;
+  font-size: 14px;
+}
