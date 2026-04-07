@@ -81,3 +81,406 @@ body {
   cursor: pointer;
   font-size: 14px;
 }
+
+.hero {
+  background-image: url(/img/fon1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 648px;
+  position: relative;
+}
+
+.hero-content h1 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 36px;
+  color: #fff;
+  padding: 206px;
+  justify-content: right;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: right;
+}
+
+.slider-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #107c10;
+  font-size: 30px;
+  padding: 20px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.slider-nav:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.slider-nav.prev {
+  left: 0;
+}
+
+.slider-nav.next {
+  right: 0;
+}
+
+/* Buttons */
+.btn {
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  border-radius: 4px;
+  width: 136px;
+  height: 38px;
+  background: #8dd83d;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 131%;
+  color: #fff;
+}
+
+.btn-secondary {
+  border-radius: 4px;
+  width: 148px;
+  height: 38px;
+  background: linear-gradient(180deg, #686c6f 0%, #373a3c 100%);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 131%;
+  color: #fff;
+}
+
+.btn-green {
+  background: #7fba00;
+  color: #fff;
+  width: 100%;
+  width: 278px;
+height: 60px;
+}
+
+.btn-green:hover {
+  background: #6ca300;
+}
+
+.btn-dark {
+  background: #4a4a4a;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  background: #3a3a3a;
+}
+
+.value-title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 48px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.xbox-logo-center {
+  padding-top: 63px;
+  margin-bottom: 16px;
+  justify-content: center;
+  display: flex;
+}
+
+/* .value-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+.value-card {
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 350px;
+  transition: 0.2s;
+}
+.card-image {
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+.card-image img {
+  max-width: 80%;
+  height: auto;
+}
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+.card-content h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.card-content p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+h3{
+    color: #435766;
+}
+.card-content p{
+    color: #435766;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 20px;
+  }
+  .games-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .hero-content h1 {
+    padding: 150px 20px 20px 20px;
+    font-size: 32px;
+    text-align: center;
+  }
+  .hero-buttons {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .value-title {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 15px 0;
+    gap: 15px;
+  }
+  .top-nav {
+    order: 1;
+  }
+  .nav-links {
+    order: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+  }
+  .nav-links a {
+    margin-left: 0;
+    font-size: 14px;
+  }
+  .search-box {
+    order: 3;
+    flex: 1;
+    min-width: 160px;
+  }
+  .search-box input {
+    width: 100%;
+    max-width: 180px;
+  }
+  .my-xbox {
+    order: 4;
+  }
+
+  .hero {
+    height: auto;
+    min-height: 500px;
+    background-position: center 30%;
+  }
+  .hero-content h1 {
+    padding: 120px 15px 15px 15px;
+    font-size: 28px;
+    text-align: center;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+  }
+  .btn-primary,
+  .btn-secondary {
+    width: 200px;
+    max-width: 80vw;
+  }
+  .slider-nav {
+    padding: 12px;
+    font-size: 22px;
+  }
+
+  .value-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  .xbox-logo-center {
+    padding-top: 40px;
+  }
+  .value-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+  .value-card {
+    max-width: 100%;
+  }
+
+  .section-title {
+    font-size: 26px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .games-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .game-card {
+    max-width: 400px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .design-lab {
+    flex-direction: column;
+    text-align: center;
+    padding: 35px 20px;
+    gap: 30px;
+  }
+  .design-buttons {
+    justify-content: center;
+  }
+  .design-lab-content h2 {
+    font-size: 28px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+  .footer-bottom-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+  .nav {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .top-nav {
+    text-align: center;
+  }
+  .nav-links {
+    justify-content: space-evenly;
+  }
+  .search-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .search-box input {
+    width: 80%;
+  }
+  .my-xbox {
+    text-align: center;
+    padding: 5px 0;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+    padding: 90px 10px 10px 10px;
+  }
+  .hero-buttons button {
+    font-size: 14px;
+    height: 44px;
+  }
+  .value-title {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+  .card-content h3 {
+    font-size: 20px;
+  }
+  .btn-green,
+  .btn-dark {
+    font-size: 13px;
+    padding: 8px;
+  }
+  .section-title {
+    font-size: 22px;
+  }
+  .design-lab-content h2 {
+    font-size: 24px;
+  }
+  .design-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  .design-buttons .btn {
+    width: 100%;
+  }
+  .controllers-showcase {
+    justify-content: center;
+  }
+  .controller-float {
+    width: 40px;
+    height: 40px;
+  }
+  .footer-column h4 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-content h1 {
+    font-size: 22px;
+  }
+  .btn-primary,
+  .btn-secondary {
+    width: 170px;
+  }
+  .nav-links a {
+    font-size: 12px;
+  }
+  .search-box input {
+    font-size: 12px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.game-card.featured .game-content {
+  padding-bottom: 25px;
+}
+.game-card.featured .game-content h3 {
+  margin-bottom: 18px;
+} */
